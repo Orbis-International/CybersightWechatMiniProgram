@@ -1,0 +1,17 @@
+<!--pages/course/course.wxml-->
+
+<view class="search-container">
+  <input class="search-input" placeholder="Search courses" bindinput="onSearchInput" />
+</view>
+
+<view class="course-list">
+  <block wx:for="{{filteredCourseList}}" wx:for-index="index" wx:for-item="item">
+    <view class="course-container">
+      <view class="title">{{item.title.rendered}}</view>
+      <view class="description">{{item.content.rendered}}</view>
+      <view class="id">ID: {{status}}</view>
+    </view>
+  </block>
+</view>
+
+

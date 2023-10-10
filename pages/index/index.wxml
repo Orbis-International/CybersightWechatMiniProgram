@@ -1,0 +1,6 @@
+<image style="position: relative; display: inline-block; box-sizing: border-box; left: 0rpx; top: 0rpx; width: 750rpx; height: 774rpx" src="/image/Orbis-cn-bg.jpg" />
+
+<button bindtap="moveToCourse" class="custom-button course-button" style="position: relative; left: 0rpx; top: 22rpx">Course</button>
+<button bindtap="moveToLibrary" class="custom-button library-button" style="position: relative; left: 0rpx; top: 22rpx">Library</button>
+<button bindtap="moveToWebinar" class="custom-button webinar-button" style="position: relative; left: 0rpx; top: 22rpx">Webinar</button>
+<button bindtap="moveToAbout" class="custom-button webinar-button" style="position: relative; left: 0rpx; top: 22rpx">About</button>

@@ -1,0 +1,16 @@
+<!--pages/librarys/library.wxml-->
+
+<view class="search-container">
+  <input class="search-input" placeholder="Search libraries" bindinput="onSearchInput" />
+</view>
+
+<view class="library-list">
+  <block wx:for="{{filteredlibraryList}}" wx:for-index="index" wx:for-item="item">
+    <view class="library-container">
+      <view class="title">{{item.title.rendered}}</view>
+      <view class="description">{{item.acf.library_content}}</view>
+    </view>
+  </block>
+</view>
+
+

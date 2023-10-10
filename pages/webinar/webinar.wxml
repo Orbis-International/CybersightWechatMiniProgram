@@ -1,0 +1,16 @@
+<!--pages/webinar/webinar.wxml-->
+<view class="search-container">
+  <input class="search-input" placeholder="Search webinars" bindinput="onSearchInput" />
+</view>
+
+<view class="webinar-list">
+  <block wx:for="{{filteredwebinarList}}" wx:for-index="index" wx:for-item="item">
+    <view class="webinar-container">
+      <view class="title">{{item.title.rendered}}</view>
+      <a class="url" href="{{item.acf.register_url}}">Click here to register</a>
+      <view class="description">{{item.acf.short_description}}</view>
+    </view>
+  </block>
+</view>
+
+

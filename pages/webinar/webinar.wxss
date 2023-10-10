@@ -1,0 +1,105 @@
+/* pages/webinar/webinar.wxss */
+
+/* Style for the entire page container */
+.page-container {
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+/* Style for the search container */
+.search-container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 5px;
+}
+
+/* Style for the search input */
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+}
+
+/* Style for the webinar list container */
+.webinar-list {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+/* Style for each webinar container */
+.webinar-container {
+  background-color: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 20px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the title */
+.title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #333;
+}
+
+/* Style for the title */
+.url {
+  font-size: 12px;
+  color: rgb(13, 109, 3);
+}
+
+/* Style for the description */
+.description {
+  margin-top: 8px;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Style for the ID */
+.id {
+  margin-top: 8px;
+  font-size: 12px;
+  color: #999;
+}
+
+
+/* webinar.wxss */
+
+/* Style for the loading container */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Center the loading animation vertically */
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to dim the content */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999; /* Ensure the loading animation is on top of other elements */
+}
+
+/* Style for the loading spinner */
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #3498db;
+  border-top: 4px solid transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite; /* Apply the spin animation */
+}
+
+/* Keyframes for the spin animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
